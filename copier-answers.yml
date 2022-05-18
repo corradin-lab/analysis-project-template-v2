@@ -6,7 +6,7 @@ author_fullname: An Hoang
 
 author_email: anhoang@wi.mit.edu
 
-author_username:hoangthienan95
+author_username: hoangthienan95
 
 repository_provider: github.com
 
@@ -22,7 +22,7 @@ copyright_holder:
 copyright_holder_email:
   default: "{{ author_email }}"
 
-copyright_date:2022
+copyright_date: 2022
 
 copyright_license: MIT License
 
