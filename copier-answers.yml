@@ -10,30 +10,8 @@ author_username: hoangthienan95
 
 repository_provider: github.com
 
-repository_namespace:
-  default: "{{ author_username }}"
-
-repository_name:
-  default: "{{ project_name|lower|replace('_', '-')|replace(' ', '-') }}"
-
-copyright_holder:
-  default: "{{ author_fullname }}"
-
-copyright_holder_email:
-  default: "{{ author_email }}"
-
 copyright_date: 2022
 
 copyright_license: MIT License
 
-python_package_distribution_name:
-  default: "{{ project_name|lower|replace('_', '-')|replace(' ', '-') }}"
-
-python_package_import_name:
-  default: "{{ project_name|lower|replace('-', '_')|replace(' ', '_') }}"
-
-python_package_command_line_name:
-  default: "{{ project_name|lower|replace('_', '-')|replace(' ', '-') }}"
-
-use_precommit:
-  default: yes
+use_precommit: yes
