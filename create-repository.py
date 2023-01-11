@@ -48,8 +48,7 @@ project_python_package :={python_package_name}
 generate-files:
 	poetry run python create-repository.py
 
-instal-packages:
-	poetry shell
+install-packages:
 	poetry add --dev kedro kedro-viz jupyter jupyterlab ruff slipcover toml pyyaml lineapy dvc wandb
 
 setup-kedro:
@@ -76,7 +75,7 @@ clean:
 
 
 reset-project: clean generate-files setup-kedro setup-post-kedro setup-nbdev setup-post-nbdev
-reset-project-with-install: clean generate-files instal-packages setup-kedro setup-post-kedro setup-nbdev setup-post-nbdev
+reset-project-with-install: clean generate-files install-packages setup-kedro setup-post-kedro setup-nbdev setup-post-nbdev
  """
 
 key_val_dict = {}
