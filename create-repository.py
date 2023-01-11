@@ -97,3 +97,5 @@ with open("kedro-answers.yml", "w") as file:
     
 with open("Makefile", "w") as file:
     file.write(makefile_template.format(**key_val_dict))
+
+print("DONE!")
