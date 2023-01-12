@@ -48,7 +48,7 @@ generate-files:
 	poetry run python create-repository.py
 
 install-packages:
-	poetry add --dev kedro=0.18.4 kedro-viz jupyter jupyterlab ruff slipcover toml pyyaml lineapy dvc wandb
+	poetry add --dev kedro=0.18.4 jupyter jupyterlab ruff slipcover toml pyyaml lineapy dvc wandb
 
 setup-kedro:
 	mv pyproject.toml pyproject_.toml
