@@ -31,8 +31,11 @@ You need to have [Poetry](https://python-poetry.org/) installed globally and Pyt
 4. Run the following commands
 ```
 python create-repository.py
-make reset-project-with-install
+poetry shell
+make install-packages
+make reset-project
 ```
+
 <details>
 <summary><b>Example repository structure when finished</b></summary>
 
