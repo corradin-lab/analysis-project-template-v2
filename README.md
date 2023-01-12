@@ -14,7 +14,7 @@ This is a suggested project setup for a data analysis project. It uses open sour
 
 ### Prerequisite
 
-You need to have [Poetry](https://python-poetry.org/) installed globally and Python >=3.8,<3.11
+You need to have [Poetry](https://python-poetry.org/) installed globally and Python >=3.8,<3.11 . You also should have a github account, and a generated token so you can clone/push repositories.
 
 ### Setup steps
 
@@ -24,7 +24,7 @@ You need to have [Poetry](https://python-poetry.org/) installed globally and Pyt
 
 2. Clone your repo locally using `git clone <repo url>`
 
-3. Edit values in `change-my-values.yaml`, `project_name` should be your repository's name
+3. Edit values in `change-my-values.yaml`, `project_name` should be your repository's name, 
 <img width="434" alt="image" src="https://user-images.githubusercontent.com/25307953/211793460-8388650d-09ec-4366-b99d-0f3b9bfa667e.png">
 
 
@@ -34,6 +34,9 @@ python create-repository.py
 poetry shell
 make install-packages
 make reset-project
+git add .
+git commit -m "finish setting up repo"
+git push
 ```
 
 <details>
