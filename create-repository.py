@@ -45,7 +45,7 @@ project_name :={project_name}
 project_python_package :={python_package_name}
 
 generate-files:
-	poetry run python create-repository.py
+	python create-repository.py
 
 install-packages:
 	poetry add --dev kedro=0.18.4 jupyter jupyterlab ruff slipcover toml pyyaml lineapy dvc wandb
