@@ -12,7 +12,6 @@ authors = ["{author_email}"]
 python = ">=3.8,<3.11"
 
 [tool.poetry.dev-dependencies]
-kedro = "^0.18.4"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
@@ -49,7 +48,7 @@ generate-files:
 	poetry run python create-repository.py
 
 install-packages:
-	poetry add --dev kedro kedro-viz jupyter jupyterlab ruff slipcover toml pyyaml lineapy dvc wandb
+	poetry add --dev kedro=0.18.4 kedro-viz jupyter jupyterlab ruff slipcover toml pyyaml lineapy dvc wandb
 
 setup-kedro:
 	mv pyproject.toml pyproject_.toml
